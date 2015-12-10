@@ -1,0 +1,8 @@
+{
+  "name": "kibi_wordcloud",
+  "version": "0.1.0",
+  "dependencies": {
+    "jqcloud2": "2.0.1",
+    "angular-jqcloud": "sirensolutions/angular-jqcloud#1.0.2szydan"
+  }
+}
