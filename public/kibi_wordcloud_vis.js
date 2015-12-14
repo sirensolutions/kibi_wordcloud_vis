@@ -2,9 +2,9 @@ define(function (require) {
   require('ui/agg_table');
   require('ui/agg_table/agg_table_group');
 
-  require('plugins/kibi_wordcloud/kibi_wordcloud_vis.less');
-  require('plugins/kibi_wordcloud/kibi_wordcloud_vis_controller');
-  require('plugins/kibi_wordcloud/kibi_wordcloud_vis_params');
+  require('plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis.less');
+  require('plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis_controller');
+  require('plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis_params');
 
   require('ui/registry/vis_types').register(KibiWordcloudVisProvider);
 
@@ -14,10 +14,10 @@ define(function (require) {
 
     return new TemplateVisType({
       name: 'kibi_wordcloud',
-      title: 'Kibi Word cloud',
+      title: 'Kibi Word Cloud',
       icon: 'fa-cloud',
       description: 'Visualize a word cloud from high frequency terms.',
-      template: require('plugins/kibi_wordcloud/kibi_wordcloud_vis.html'),
+      template: require('plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis.html'),
       params: {
         defaults: {
           perPage: 10,

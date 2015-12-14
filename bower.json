@@ -1,5 +1,5 @@
 {
-  "name": "kibi_wordcloud",
+  "name": "kibi-wordcloud-plugin",
   "version": "0.1.0",
   "dependencies": {
     "jqcloud2": "2.0.1",

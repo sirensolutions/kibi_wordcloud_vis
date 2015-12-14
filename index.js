@@ -4,7 +4,7 @@ module.exports = function (kibana) {
     require: ['kibana', 'elasticsearch'],
     uiExports: {
       visTypes: [
-        'plugins/kibi_wordcloud/kibi_wordcloud_vis'
+        'plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis'
       ]
     }
   });
