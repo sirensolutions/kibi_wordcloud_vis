@@ -1,5 +1,9 @@
 ## Kibi Word Cloud Plugin    
 
+This plugin can be isntalled in both:
+ 
+ * [Kibana >= 4.3](https://www.elastic.co/downloads/past-releases/kibana-4-3-0)
+ * [Kibi >= 0.3](https://siren.solutions/kibi) (Coming soon ...)
     
 ### Manuall installation
 
@@ -22,6 +26,8 @@ cp -R build/kibi-wordcloud-plugin KIBANA_FOLDER_PATH/installedPlugins/
 - run tests with `npm test`
 
 #### Breaking changes with respect to the version embedded in Kibi 0.1x and 0.2.x
+
+In the saved/exported visualization:     
 
 - The visualization name changed from `sindicetech_wordcloud` to 
   `kibi_wordcloud`
