@@ -43,13 +43,13 @@ define(function (require) {
         {
           group: 'buckets',
           name: 'bucket',
-          title: 'Split Rows',
+          title: 'Split Words',
           aggFilter: ['terms', 'significant_terms'],
           min: 1,
           max: 1
         }
       ]),
-      requiresSearch: false
+      requiresSearch: true
     });
   }
 
