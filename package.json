@@ -1,12 +1,12 @@
 {
   "name": "kibi-wordcloud-plugin",
-  "version": "0.3.0",
+  "version": "0.1.0",
   "authors": [
     "SIREn Solutions <info@siren.solutions>"
   ],
   "description": "Kibi Word Cloud visualization plugin",
-  "main": "gulpfile.js",
-  "license": "Apache 2.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
   "homepage": "http://siren.solutions/kibi",
   "scripts": {
     "test": "gulp test",
