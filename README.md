@@ -2,7 +2,7 @@
 
 This is a plugin for [Kibana 4.3+](https://www.elastic.co/products/kibana) and [Kibi 0.3](http://siren.solutions/kibi) (our extention of Kibana for Relational Data).
 
-Plugin display a cloud of words.
+The plugin displays a cloud of words.
 
 ![image](img/wordcloud.png)
 ![image](img/wordcloud-config.png)
@@ -20,7 +20,7 @@ This plugin can be installed in both:
 bin/kibana plugin --install sirensolutions/kibi-wordcloud-plugin/0.1.0
 ```
     
-### Manuall
+### Manual
 
 ```
 git clone https://github.com/sirensolutions/kibi-wordcloud-plugin.git
