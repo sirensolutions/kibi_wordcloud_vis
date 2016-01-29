@@ -1,7 +1,7 @@
 define(function (require) {
   var _ = require('lodash');
 
-  var module = require('ui/modules').get('kibi-wordcloud-plugin/kibi_wordcloud_vis', ['kibana']);
+  var module = require('ui/modules').get('kibi_wordcloud_vis/kibi_wordcloud_vis', ['kibana']);
   require('angular-jqcloud');
 
   module.controller('KibiWordcloudVisController', function ($scope, $element, $rootScope, Private, getAppState) {

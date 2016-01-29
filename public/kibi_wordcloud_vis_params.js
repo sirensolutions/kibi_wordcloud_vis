@@ -1,9 +1,9 @@
 define(function (require) {
-  require('ui/modules').get('kibi_wordcloud/kibi_wordcloud_vis')
+  require('ui/modules').get('kibi_wordcloud_vis/kibi_wordcloud_vis')
   .directive('kibiWordcloudVisParams', function () {
     return {
       restrict: 'E',
-      template: require('plugins/kibi-wordcloud-plugin/kibi_wordcloud_vis_params.html'),
+      template: require('plugins/kibi_wordcloud_vis/kibi_wordcloud_vis_params.html'),
       link: function ($scope) {
         $scope.$watchMulti([
           'vis.params.showPartialRows',
