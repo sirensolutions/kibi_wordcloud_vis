@@ -17,23 +17,23 @@ This plugin can be installed in both:
 ### Automatic
 
 ```
-bin/kibana plugin --install sirensolutions/kibi-wordcloud-plugin/0.1.0
+bin/kibana plugin --install sirensolutions/kibi_wordcloud_vis/0.1.0
 ```
     
 ### Manual
 
 ```
-git clone https://github.com/sirensolutions/kibi-wordcloud-plugin.git
-cd kibi-wordcloud-plugin
+git clone https://github.com/sirensolutions/kibi_wordcloud_vis.git
+cd kibi_wordcloud_vis
 npm install
 npm run build
-cp -R build/kibi-wordcloud-plugin KIBANA_FOLDER_PATH/installedPlugins/
+cp -R build/kibi_wordcloud_vis KIBANA_FOLDER_PATH/installedPlugins/
 ```
 
 ## Uninstall
 
 ```
-bin/kibana plugin  --remove kibi-wordcloud-plugin
+bin/kibana plugin  --remove kibi_wordcloud_vis
 ```
 
 ## Development
