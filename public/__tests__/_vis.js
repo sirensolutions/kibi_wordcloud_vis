@@ -13,7 +13,7 @@ describe('Visualization', function () {
   var filter;
   var init;
 
-  beforeEach(ngMock.module('kibana', 'kibi_wordcloud/kibi_wordcloud_vis'));
+  beforeEach(ngMock.module('kibana', 'kibi_wordcloud_vis/kibi_wordcloud_vis'));
 
   beforeEach(ngMock.inject(function ($injector) {
     Private = $injector.get('Private');
