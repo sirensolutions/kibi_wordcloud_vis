@@ -17,7 +17,10 @@ This plugin can be installed in both:
 ### Automatic
 
 ```
-bin/kibana plugin --install sirensolutions/kibi_wordcloud_vis/0.1.0
+# for kibi
+./bin/kibi plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/0.1.0/target/kibi_wordcloud_vis-0.1.0.zip
+# for kibana 
+./bin/kibana plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/0.1.0/target/kibi_wordcloud_vis-0.1.0.zip
 ```
     
 ### Manual
