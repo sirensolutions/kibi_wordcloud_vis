@@ -16,27 +16,31 @@ This plugin can be installed in both:
 
 ### Automatic
 
+```sh
+$ # for kibi
+$ ./bin/kibi plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.5.3/target/kibi_wordcloud_vis-4.5.3.zip
+$ # for kibana 
+$ ./bin/kibana plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.5.3/target/kibi_wordcloud_vis-4.5.3.zip
 ```
-# for kibi
-./bin/kibi plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/0.1.0/target/kibi_wordcloud_vis-0.1.0.zip
-# for kibana 
-./bin/kibana plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/0.1.0/target/kibi_wordcloud_vis-0.1.0.zip
-```
-    
+
 ### Manual
 
-```
-git clone https://github.com/sirensolutions/kibi_wordcloud_vis.git
-cd kibi_wordcloud_vis
-npm install
-npm run build
-cp -R build/kibi_wordcloud_vis KIBANA_FOLDER_PATH/installedPlugins/
+```sh
+$ git clone https://github.com/sirensolutions/kibi_wordcloud_vis.git
+$ cd kibi_wordcloud_vis
+$ npm install
+$ npm run build
+$ npm run package
+$ unzip target/kibi_wordcloud_vis-4.5.3.zip -d KIBANA_FOLDER_PATH/installedPlugins/
 ```
 
 ## Uninstall
 
-```
-bin/kibana plugin  --remove kibi_wordcloud_vis
+```sh
+$ # for kibi
+$ bin/kibi plugin  --remove kibi_wordcloud_vis
+$ # for kibana
+$ bin/kibana plugin  --remove kibi_wordcloud_vis
 ```
 
 ## Development
@@ -51,17 +55,14 @@ bin/kibana plugin  --remove kibi_wordcloud_vis
 
 If you are running kibana from folder with a name other than kibana, e.g. kibi
 
+```sh
+$ gulp dev  --kibanahomepath=/path/to/kibi
+$ gulp test --kibanahomepath=/path/to/kibi
 ```
-gulp dev  --kibanahome=kibi
-gulp test --kibanahome=kibi
-```
-
 
 ## Breaking changes with respect to the version embedded in Kibi 0.1x and 0.2.x
 
-In the saved/exported visualization:     
+In the saved/exported visualization:
 
-- The visualization name changed from `sindicetech_wordcloud` to 
-  `kibi_wordcloud`
-- The visualization parameter `showMeticsAtAllLevels` is now
-  `showMetricsAtAllLevels`
+- The visualization name changed from `sindicetech_wordcloud` to `kibi_wordcloud`
+- The visualization parameter `showMeticsAtAllLevels` is now `showMetricsAtAllLevels`

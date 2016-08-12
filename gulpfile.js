@@ -30,12 +30,12 @@ var exclude = Object.keys(pkg.devDependencies).map(function (name) {
 });
 
 var knownOptions = {
-  string: 'kibanahome',
-  default: { kibanahome: 'kibana' }
+  string: 'kibanahomepath',
+  default: { kibanahomepath: 'kibana' }
 };
 var options = minimist(process.argv.slice(2), knownOptions);
 
-var kibanaPluginDir = path.resolve(__dirname, '../' + options.kibanahome + '/installedPlugins/' + pkg.name);
+var kibanaPluginDir = path.resolve(__dirname, options.kibanahomepath + '/installedPlugins/' + pkg.name);
 
 
 function syncPluginTo(dest, done) {
@@ -117,14 +117,14 @@ gulp.task('dev', ['sync'], function (done) {
 
 gulp.task('test', ['sync'], function(done) {
   spawn('grunt', ['test:browser', '--grep=Kibi Word Cloud'], {
-    cwd: '../' + options.kibanahome,
+    cwd: options.kibanahomepath,
     stdio: 'inherit'
   }).on('close', done);
 });
 
 gulp.task('coverage', ['sync'], function(done) {
   spawn('grunt', ['test:coverage', '--grep=Kibi Word Cloud'], {
-    cwd: '../' + options.kibanahome,
+    cwd: options.kibanahomepath,
     stdio: 'inherit'
   }).on('close', done);
 });
