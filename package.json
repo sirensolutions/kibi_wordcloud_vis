@@ -1,6 +1,6 @@
 {
   "name": "kibi_wordcloud_vis",
-  "version": "4.4.2",
+  "version": "4.5.3",
   "authors": [
     "SIREn Solutions <info@siren.solutions>"
   ],
@@ -14,7 +14,8 @@
     "start": "gulp dev",
     "postinstall": "bower install",
     "precommit": "gulp lint",
-    "build": "gulp build"
+    "build": "gulp build",
+    "package": "gulp package"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.6",
