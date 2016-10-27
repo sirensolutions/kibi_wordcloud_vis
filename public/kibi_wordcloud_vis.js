@@ -14,7 +14,7 @@ define(function (require) {
 
     return new TemplateVisType({
       name: 'kibi_wordcloud',
-      title: 'Kibi Word Cloud',
+      title: 'Kibi word cloud',
       icon: 'fa-cloud',
       description: 'Visualize a word cloud from high frequency terms.',
       template: require('plugins/kibi_wordcloud_vis/kibi_wordcloud_vis.html'),
