@@ -12,7 +12,6 @@
     "test": "gulp test",
     "test:coverage": "gulp coverage",
     "start": "gulp dev",
-    "postinstall": "bower install",
     "precommit": "gulp lint",
     "build": "gulp build",
     "package": "gulp package"
@@ -32,5 +31,9 @@
     "rimraf": "^2.4.4",
     "rsync": "^0.4.0",
     "minimist": "1.2.0"
+  },
+  "dependencies": {
+    "jqcloud2": "^2.0.1",
+    "angular-jqcloud": "sirensolutions/angular-jqcloud#1.0.2-1"
   }
 }
