@@ -1,4 +1,8 @@
-## Kibi/Kibana Word Cloud Plugin    
+# Deprecation
+
+:warning: This visualization is deprecated for Kibi/Kibana >= 5.2. Use the `tag cloud` visualization instead.
+
+# Kibi/Kibana Word Cloud Plugin    
 
 This is a plugin for [Kibana 4.3+](https://www.elastic.co/products/kibana) and [Kibi 0.3](http://siren.solutions/kibi) (our extention of Kibana for Relational Data).
 
