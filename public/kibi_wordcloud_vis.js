@@ -9,6 +9,7 @@ define(function (require) {
   require('ui/registry/vis_types').register(KibiWordcloudVisProvider);
 
   function KibiWordcloudVisProvider(Private) {
+    var VisType = Private(require('ui/vis/vis_type'));
     var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
     var Schemas = Private(require('ui/Vis/Schemas'));
 
@@ -16,6 +17,7 @@ define(function (require) {
       name: 'kibi_wordcloud',
       title: 'Kibi word cloud',
       icon: 'fa-cloud',
+      category: VisType.CATEGORY.KIBI,
       description: 'Visualize a word cloud from high frequency terms.',
       template: require('plugins/kibi_wordcloud_vis/kibi_wordcloud_vis.html'),
       params: {
