@@ -1,6 +1,6 @@
 # Deprecation
 
-:warning: This visualization is deprecated for Kibi/Kibana >= 5.2. Use the `tag cloud` visualization instead.
+:warning: This visualization is deprecated for Kibi/Kibana >= 4.6.4 Use the kibana `tag cloud` visualization instead.
 
 # Kibi/Kibana Word Cloud Plugin    
 
@@ -16,15 +16,15 @@ The plugin displays a cloud of words.
 This plugin can be installed in both:
  
  * [Kibana: 4.3+](https://www.elastic.co/downloads/past-releases/kibana-4-3-0)
- * [Kibi: 0.3+](https://siren.solutions/kibi) (Coming soon ...)
+ * [Kibi: 0.3+](https://siren.solutions/kibi)
 
 ### Automatic
 
 ```sh
 $ # for kibi
-$ ./bin/kibi plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.5.3/target/kibi_wordcloud_vis-4.5.3.zip
+$ ./bin/kibi plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.6.4-4/target/kibi_wordcloud_vis-4.6.4-4.zip
 $ # for kibana 
-$ ./bin/kibana plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.5.3/target/kibi_wordcloud_vis-4.5.3.zip
+$ ./bin/kibana plugin -i kibi_wordcloud_vis -u https://github.com/sirensolutions/kibi_wordcloud_vis/raw/4.6.4-4/target/kibi_wordcloud_vis-4.6.4-4.zip
 ```
 
 ### Manual
@@ -35,7 +35,7 @@ $ cd kibi_wordcloud_vis
 $ npm install
 $ npm run build
 $ npm run package
-$ unzip target/kibi_wordcloud_vis-4.5.3.zip -d KIBANA_FOLDER_PATH/installedPlugins/
+$ unzip target/kibi_wordcloud_vis-4.6.4-4.zip -d KIBANA_FOLDER_PATH/installedPlugins/
 ```
 
 ## Uninstall
@@ -51,7 +51,7 @@ $ bin/kibana plugin  --remove kibi_wordcloud_vis
 
 - Clone the repository at the same level of a Kibana > 4.3 clone
 - If needed, switch to the same node version as Kibana using nvm 
-  (e.g. `nvm use 0.12`)
+  (e.g. `nvm use 6.9.0`)
 - Install dependencies with `npm install`
 - Install the plugin to Kibana and start watching for changes by running 
   `npm start`
